@@ -59,7 +59,7 @@ InstaProxy.STATUS_CODES = {
 InstaProxy.ERROR_MESSAGES = {
   INVALID_QUERY: {
     code: 1,
-    sevr: 3,
+    sevr: 0,
     desc: 'Invalid Query Parameters Passed.'
   },
   FETCH_FAILED: {
@@ -69,17 +69,17 @@ InstaProxy.ERROR_MESSAGES = {
   },
   NOT_FOUND: {
     code: 3,
-    sevr: 3,
+    sevr: 0,
     desc: 'The resource requested was not found.'
   },
   REDIRECT: {
     code: 4,
-    sevr: 4,
+    sevr: 0,
     desc: 'Redirecting...'
   },
   REFERER_DENIED: {
     code: 5,
-    sevr: 2,
+    sevr: 0,
     desc: 'Referer was denied access.'
   }
 };
@@ -282,8 +282,9 @@ InstaProxy.callbackWrapper = function (response, callback) {
   return function (body) {
     try {
       callback(body);
+      console.log('error body', body);
     } catch (error) {
-      console.log(response);
+      console.log('error');
       this.respond(
         response,
         this.STATUS_CODES.NOT_FOUND,
