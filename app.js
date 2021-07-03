@@ -226,11 +226,7 @@ InstaProxy.fetchFromInstagramGQL = function (param, request, response) {
  * @this
  */
 InstaProxy.isNotOnBlackList = function (urlString) {
-  return !this.filter.has(
-    DomainParser(
-      Url.parse(urlString).hostname
-    ).domainName
-  );
+  return true;
 };
 
 /**
