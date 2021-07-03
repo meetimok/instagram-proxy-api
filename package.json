@@ -10,7 +10,7 @@
     "test": "echo \"Dummy Tests Pass\""
   },
   "engines": {
-    "node": "6.11.3"
+    "node": ">=12"
   },
   "repository": {
     "type": "git",
@@ -31,8 +31,7 @@
   },
   "homepage": "https://github.com/meetimok/instagram-reverse-proxy#readme",
   "dependencies": {
-    "bloomxx": "0.0.5",
-    "cors": "^2.8.4",
+    "cors": "^2.8.5",
     "domain-parser": "0.0.5",
     "express": "^4.16.2",
     "https": "^1.0.0",

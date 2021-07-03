@@ -12,7 +12,7 @@
 'use strict';
 
 // Imports.
-const Bloom = require('bloomxx');
+//const Bloom = require('bloomxx');
 const Blacklist = require('./blacklist.js');
 const Cors = require('cors');
 const DomainParser = require('domain-parser');
@@ -34,7 +34,7 @@ const InstaProxy = {
   GRAPH_PATH: '/graphql/query/',
   GRAPH_USER_QUERY_ID: '17888483320059182',
   GRAPH_TAG_QUERY_ID: '17875800862117404',
-  GITHUB_REPO: 'https://github.com/whizzzkid/instagram-reverse-proxy',
+  GITHUB_REPO: 'https://github.com/meetimok/instagram-reverse-proxy',
   SERVER_PORT: 3000
 };
 
@@ -532,11 +532,11 @@ InstaProxy.getRouteMap = function () {
  */
 InstaProxy.setUpFilter = function () {
   this.log('Setting Up Filters');
-  this.filter = Bloom.BloomFilter.createOptimal(Blacklist.list.length);
+  //this.filter = Bloom.BloomFilter.createOptimal(Blacklist.list.length);
   for (let i in Blacklist.list) {
     // Probably just being paranoid here.
     if (Blacklist.list.hasOwnProperty(i)) {
-      this.filter.add(Blacklist.list[i]);
+      //this.filter.add(Blacklist.list[i]);
     }
   }
   this.setUpRoutes();
