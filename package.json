@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/whizzzkid/instagram-reverse-proxy.git"
+    "url": "git+https://github.com/meetimok/instagram-reverse-proxy.git"
   },
   "keywords": [
     "instagram",
@@ -27,9 +27,9 @@
   "author": "me@nishantarora.in",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/whizzzkid/instagram-reverse-proxy/issues"
+    "url": "https://github.com/meetimok/instagram-reverse-proxy/issues"
   },
-  "homepage": "https://github.com/whizzzkid/instagram-reverse-proxy#readme",
+  "homepage": "https://github.com/meetimok/instagram-reverse-proxy#readme",
   "dependencies": {
     "bloomxx": "0.0.5",
     "cors": "^2.8.4",
