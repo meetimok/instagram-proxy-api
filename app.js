@@ -334,8 +334,8 @@ InstaProxy.generateGraphQLQuery = function (queryId, extraParams, request) {
  */
 InstaProxy.processAdvanceParams = function (request, response) {
   if (this.isAdvancedRequestValid(request, response)) {
+    console.log('isAdvancedRequestValid response', response);
     let callback = function (body) {
-      console.log('callback body', body);
       return JSON.parse(body);
     };
     this.fetchFromInstagram(
