@@ -21,7 +21,7 @@ This builds over the Instagram's public API to provide more functionality and pr
 
 ## 1-Click Deploy
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg?style=flat)](https://heroku.com/deploy?template=https://github.com/whizzzkid/instagram-reverse-proxy)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg?style=flat)](https://heroku.com/deploy?template=https://github.com/meetimok/instagram-reverse-proxy)
 
 ## The Problem.
 
