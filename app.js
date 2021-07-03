@@ -282,6 +282,7 @@ InstaProxy.callbackWrapper = function (response, callback) {
     try {
       callback(body);
     } catch (error) {
+      console.log(response);
       this.respond(
         response,
         this.STATUS_CODES.NOT_FOUND,
