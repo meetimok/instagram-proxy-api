@@ -142,6 +142,7 @@ InstaProxy.instagramFetcher = function (callback) {
       body += chunk;
     });
     serverResponse.on('end', function () {
+      console.log('serverResponse end', body);
       callback(body);
     });
   };
@@ -280,9 +281,9 @@ InstaProxy.generateCallBackForWrapper = function (callback, response) {
  */
 InstaProxy.callbackWrapper = function (response, callback) {
   return function (body) {
+    console.log('callbackWrapper body', body);
     try {
       callback(body);
-      console.log('error body', body);
     } catch (error) {
       console.log('error try catch', body, error);
       this.respond(
