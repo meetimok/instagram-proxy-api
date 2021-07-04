@@ -534,12 +534,12 @@ InstaProxy.getRouteMap = function () {
 InstaProxy.setUpFilter = function () {
   this.log('Setting Up Filters');
   //this.filter = Bloom.BloomFilter.createOptimal(Blacklist.list.length);
-  for (let i in Blacklist.list) {
+  /*for (let i in Blacklist.list) {
     // Probably just being paranoid here.
     if (Blacklist.list.hasOwnProperty(i)) {
       //this.filter.add(Blacklist.list[i]);
     }
-  }
+  }*/
   this.setUpRoutes();
 };
 
